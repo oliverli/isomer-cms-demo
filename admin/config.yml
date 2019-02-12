@@ -2,16 +2,17 @@ backend:
   name: github
   repo: yicheng340/isomer-cms-demo
   branch: master
-	
-publish_mode: editorial_workflow
+  publish_mode: editorial_workflow
 media_folder: "images"
-
+site-url: https://angry-minsky-7a4db6.netlify.com
+logo-url: https://angry-minsky-7a4db6.netlify.com/images/isomer-logo.svg
 collections:
   - name: "press-releases"
     label: "Press Releases"
     folder: "news/press-releases/_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "news/press-releases/{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string", hint: "Title for the press release"}
@@ -23,6 +24,7 @@ collections:
     folder: "news/forum-letter-replies/_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "news/forum-letter-replies/{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string", hint: "Title for the letter reply"}

@@ -2,10 +2,13 @@ backend:
   name: github
   repo: yicheng340/isomer-cms-demo
   branch: master
+
 publish_mode: editorial_workflow
 media_folder: "images"
-site-url: https://angry-minsky-7a4db6.netlify.com
-logo-url: https://angry-minsky-7a4db6.netlify.com/images/isomer-logo.svg
+
+site_url: https://angry-minsky-7a4db6.netlify.com
+logo_url: https://angry-minsky-7a4db6.netlify.com/images/isomer-logo.svg
+
 collections:
   - name: "press-releases"
     label: "Press Releases"

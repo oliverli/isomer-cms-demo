@@ -86,7 +86,7 @@ collections:
                 fields:
                   - {label: "Days", name: "days", widget: "string"}
                   - {label: "Time", name: "time", widget: "string"}
-                  - {label: "Addtional Info", name: "description", widget: "string"}
+                  - {label: "Addtional Info", name: "description", widget: "text", required: false}
           - label: "Contact Details"
             name: "column"
             widget: "list"
@@ -97,6 +97,6 @@ collections:
                 widget: "list"
                 fields:
                   - {label: "Tel No./Email", name: "line", widget: "string", hint: "If you have an email, put (email) after the actual email"}
-          - {label: "Image", name: "image-url", widget: "string"}
+          - {label: "Image", name: "image-url", widget: "string", required: false}
 
 

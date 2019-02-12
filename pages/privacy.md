@@ -1,8 +1,8 @@
 ---
 layout: simple-page
 title: Privacy Statement
-permalink: /privacy/
-breadcrumb: Privacy
+permalink: /privacy-statement/
+breadcrumb: Privacy Statement
 ---
 ### **Government Agency Privacy Statement**
 

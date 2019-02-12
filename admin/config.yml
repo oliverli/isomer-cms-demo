@@ -1,29 +1,29 @@
 backend:
-	name: github
-	repo: yicheng340/isomer-cms-demo
-	branch: master
+  name: github
+  repo: yicheng340/isomer-cms-demo
+  branch: master
 	
 publish_mode: editorial_workflow
 media_folder: "images"
 
 collections:
-	- name: "press-releases"
-	  label: "Press Releases"
-	  folder: "news/press-releases/_posts"
-	  create: true
-	  slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-	  fields:
-		- {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-		- {label: "Title", name: "title", widget: "string", hint: "Title for the post"}
-		- {label: "Date", name: "date", widget: "datetime", hint: "Publication date for this release"}
-		- {label: "Permalink", name: "permalink", widget: "string", hint: "URL this release will be at ugh how do I explain this"}
-	- name: "forum-letter-replies"
-	  label: "Forum Letter Replies"
-	  folder: "news/forum-letter-replies/_posts"
-	  create: true
-	  slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-	  fields:
-		- {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-		- {label: "Title", name: "title", widget: "string"}
-		- {label: "Date", name: "date", widget: "datetime"}
-		- {label: "Permalink", name: "permalink", widget: "string"}
+  - name: "press-releases"
+    label: "Press Releases"
+    folder: "news/press-releases/_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string", hint: "Title for the post"}
+      - {label: "Date", name: "date", widget: "datetime", hint: "Publication date for this release"}
+      - {label: "Permalink", name: "permalink", widget: "string", hint: "URL this release will be at ugh how do I explain this"}
+  - name: "forum-letter-replies"
+    label: "Forum Letter Replies"
+    folder: "news/forum-letter-replies/_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Permalink", name: "permalink", widget: "string"}

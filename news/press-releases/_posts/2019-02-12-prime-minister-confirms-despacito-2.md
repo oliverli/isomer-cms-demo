@@ -11,4 +11,4 @@ permalink: /news/press-releases/prime-minister-confirms-despacito-2
 3. Battle
 4. Royale
 
-hype
+hype x 2

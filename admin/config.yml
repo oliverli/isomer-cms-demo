@@ -14,9 +14,10 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-      - {label: "Title", name: "title", widget: "string", hint: "Title for the post"}
+      - {label: "Title", name: "title", widget: "string", hint: "Title for the press release"}
       - {label: "Date", name: "date", widget: "datetime", hint: "Publication date for this release"}
       - {label: "Permalink", name: "permalink", widget: "string", hint: "URL this release will be at ugh how do I explain this"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "forum-letter-replies"
     label: "Forum Letter Replies"
     folder: "news/forum-letter-replies/_posts"
@@ -24,6 +25,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Permalink", name: "permalink", widget: "string"}
+      - {label: "Title", name: "title", widget: "string", hint: "Title for the letter reply"}
+      - {label: "Date", name: "date", widget: "datetime", "Publication date for this reply"}
+      - {label: "Permalink", name: "permalink", widget: "string", hint: "URL this release will be at ugh how do I explain this"}
+      - {label: "Body", name: "body", widget: "markdown"}

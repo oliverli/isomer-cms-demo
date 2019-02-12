@@ -30,7 +30,7 @@ collections:
           - {label: "Contact Us", value: "contact-us"}
         hint: "What kind of page would you like?"
       - {label: "Title", name: "title", widget: "string", hint: "Title for the page"}
-      - {name: "permalink", widget: "hidden", default: "{{title}}"} # for experimentation
+      - {label: "Permalink", name: "permalink", widget: "string", hint: "URL this release will be at ugh how do I explain this"}
       - {label: "Breadcrumb", name: "breadcrumb", widget: "string", hint: "A human-readable path leading to this Page"}
       - {label: "Body", name: "body", widget: "markdown"}
 
@@ -65,3 +65,37 @@ collections:
       - {label: "Date", name: "date", widget: "datetime", "Publication date for this reply"}
       - {label: "Permalink", name: "permalink", widget: "string", hint: "URL this release will be at ugh how do I explain this"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "data"
+    label: "Site Settings"
+    files:
+      - label: "Contact Info"
+        name: "contact-us"
+        file: "_data/contact-us.yaml"
+        fields:
+          - label: "Locations"
+            name: "locations"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Address", name: "address", widget: "text"}
+              - {label: "Google Maps Link", name: "find-directions", widget: "string"}
+              - label: "Operating Hours"
+                name: "operating-hours"
+                fields:
+                  - {label: "Days", name: "days", widget: "string"}
+                  - {label: "Time", name: "time", widget: "string"}
+                  - {label: "Addtional Info", name: "description", widget: "string"}
+          - label: "Contact Details"
+            name: "column"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - label: "Details"
+                name: "content"
+                widget: "list"
+                fields:
+                  - {label: "Tel No./Email", name: "line", widget: "string", hint: "If you have an email, put (email) after the actual email"}
+          - {label: "Image", name: "image-url", widget: "string"}
+
+
